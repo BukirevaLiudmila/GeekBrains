@@ -1,3 +1,4 @@
+/*FONTS*/
 @font-face {
     font-family: "Dancing Script";
     src: url("../fonts/DancingScript-Regular.ttf");
@@ -13,6 +14,14 @@
     src: url("../fonts/OpenSans-Regular.ttf");
 }
 
+/*COMMON STYLES*/
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #6c71c4;
+    font-family: "Open Sans Light", monospace;
+}
+
 body {
     background-color: #fdf6e3;
     font-family: "Open Sans Light", monospace;
@@ -26,21 +35,23 @@ body {
 }
 
 .menu a {
-    text-decoration: none;
-    cursor: pointer;
-    color: #6c71c4;
     border-bottom: 1px dashed;
 }
 
-.menu a:hover {
+/*.menu a:hover {
     border-bottom: 0.07em solid;
     font-weight: bold;
 }
 
 .menu a:active {
     color: #707070;
+}*/
+
+footer {
+    font-size: 14px;
 }
 
+/*MAIN PAGE*/
 .name-shop, cite {
     font-family: "Dancing Script", cursive;
 }
@@ -61,10 +72,7 @@ cite {
     font-size: 22px;
 }
 
-footer {
-    font-size: 14px;
-}
-
+/*PRODUCT PAGE*/
 .product-description h2, .product-characteristics h3, .detailed-description h3 {
     color: black;
     font-size: 18px;
@@ -80,7 +88,7 @@ footer {
 }
 
 .product-description img {
-    border: 5px double #6c71c4;
+    border: 4px double #6c71c4;
 }
 
 .product-characteristics ul {
@@ -96,6 +104,7 @@ footer {
     text-align: left;
 }
 
+/*CONTACT PAGE*/
 .form-element {
     color: #fdf6e3;
     border-radius: 5px;
@@ -105,29 +114,34 @@ footer {
     opacity: 0.4;
 }
 
+form div input {
+    height: 25px;
+}
+
+/*name, email*/
 form div:first-child input {
     width: 196px;
-    height: 18px;
 }
 
+/*theme*/
 form div:nth-child(2) input {
     width: 400px;
-    height: 18px;
-}
-
-form input[type="submit"] {
-    border: none;
-    width: 100px;
-    height: 30px;
-    color: #fdf6e3;
-    background: #6c71c4;
-    border-radius: 5px;
 }
 
 textarea {
     width: 398px;
     height: 130px;
     resize: none;
+}
+
+input[type="submit"] {
+    border: none;
+    width: 110px;
+    height: 30px;
+    color: #fdf6e3;
+    background: #6c71c4;
+    border-radius: 5px;
+    font-size: 15px;
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
