@@ -38,7 +38,7 @@ body {
 }
 
 .menu a:active {
-    border-bottom: 1px dashed;
+    color: #707070;
 }
 
 .name-shop, cite {
@@ -63,4 +63,35 @@ cite {
 
 footer {
     font-size: 14px;
+}
+
+.product-description h2, .product-characteristics h3, .detailed-description h3 {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background: #eee8d5;
+}
+
+.product-description p {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.product-description img {
+    border: 5px double #6c71c4;
+}
+
+.product-characteristics ul {
+    list-style-image: url(../asterisk.png);
+    line-height: 24px;
+}
+
+.detailed-description ul {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
 }
