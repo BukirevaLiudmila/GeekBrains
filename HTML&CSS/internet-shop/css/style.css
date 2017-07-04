@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Dancing Script";
+    src: url("../fonts/DancingScript-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans Light";
+    src: url("../fonts/OpenSans-Light.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans Regular";
+    src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+body {
+    background-color: #fdf6e3;
+    font-family: "Open Sans Light", monospace;
+    color: #3d4f53;
+}
+
+.menu {
+    list-style: none;
+    font-family: "Open Sans Regular", monospace;
+    font-size: 18px;
+}
+
+.menu a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #6c71c4;
+    border-bottom: 1px dashed;
+}
+
+.menu a:hover {
+    border-bottom: 0.07em solid;
+    font-weight: bold;
+}
+
+.menu a:active {
+    border-bottom: 1px dashed;
+}
+
+.name-shop, cite {
+    font-family: "Dancing Script", cursive;
+}
+
+.name-shop {
+    font-size: 60px;
+    text-align: center;
+}
+
+blockquote {
+    font-family: "Open Sans Regular", sans-serif;
+    font-size: 20px;
+    text-align: right;
+    width: 35em;
+}
+
+cite {
+    font-size: 22px;
+}
+
+footer {
+    font-size: 14px;
+}
