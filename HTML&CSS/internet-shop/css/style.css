@@ -95,3 +95,47 @@ footer {
     line-height: 24px;
     text-align: left;
 }
+
+.form-element {
+    color: #fdf6e3;
+    border-radius: 5px;
+    background-color: #586e75;
+    font-size: 15px;
+    font-family: "Open Sans Light", monospace;
+    opacity: 0.4;
+}
+
+form div:first-child input {
+    width: 196px;
+    height: 18px;
+}
+
+form div:nth-child(2) input {
+    width: 400px;
+    height: 18px;
+}
+
+form input[type="submit"] {
+    border: none;
+    width: 100px;
+    height: 30px;
+    color: #fdf6e3;
+    background: #6c71c4;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 398px;
+    height: 130px;
+    resize: none;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #fdf6e3;
+}
+
+.address ul {
+    list-style: none;
+    line-height: 24px;
+    font-size: 16px;
+}
