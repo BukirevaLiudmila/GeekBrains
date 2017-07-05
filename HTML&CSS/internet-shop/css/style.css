@@ -34,6 +34,11 @@ a {
     font-family: "Open Sans Light", monospace;
 }
 
+dl dt {
+    float: left;
+    font-weight: bold;
+}
+
 .menu {
     list-style: none;
     font-family: "Open Sans Regular", monospace;
@@ -61,12 +66,17 @@ footer {
 }
 
 /*MAIN PAGE*/
-.name-shop, .quote p:nth-child(2) {
+.logo, .quote p:nth-child(2) {
     font-family: "Dancing Script", cursive;
 }
 
+.logo {
+    font-size: 40px;
+}
+
 .name-shop {
-    font-size: 60px;
+    font-family: "Open Sans Regular", sans-serif;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -104,21 +114,23 @@ footer {
     font-weight: bold;
 }
 
-/*TODO Разобраться со всеми dl*/
-dl dt {
-    float: left;
-    font-weight: bold;
+.detailed-description dl:first-of-type dt {
+    width: 120px;
 }
 
-.detailed-description dl:first-child dt {
-    width: 200px;
+.detailed-description dl:nth-of-type(2) dt, .detailed-description dl:last-of-type dt {
+    width: 250px;
 }
 
 .product-characteristics dl dt {
-    width: 180px;
+    width: 190px;
 }
 
 /*CONTACT PAGE*/
+.contacts h2 {
+    font-size: 1.2em;
+}
+
 .form-element {
     color: #fdf6e3;
     border-radius: 5px;
@@ -162,8 +174,6 @@ input[type="submit"] {
     color: #fdf6e3;
 }
 
-.address ul {
-    list-style: none;
-    line-height: 24px;
-    font-size: 16px;
+.address dl dt {
+    width: 100px;
 }
