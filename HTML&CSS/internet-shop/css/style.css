@@ -100,21 +100,22 @@ footer {
     border: 4px double #6c71c4;
 }
 
-.product-characteristics span, .detailed-description span {
+.detailed-description h4 {
     font-weight: bold;
 }
 
-.product-characteristics ul {
-    list-style-image: url(../img/asterisk.png);
-    line-height: 24px;
+/*TODO Разобраться со всеми dl*/
+dl dt {
+    float: left;
+    font-weight: bold;
 }
 
-.detailed-description ul {
-    color: #484343;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
+.detailed-description dl:first-child dt {
+    width: 200px;
+}
+
+.product-characteristics dl dt {
+    width: 180px;
 }
 
 /*CONTACT PAGE*/
