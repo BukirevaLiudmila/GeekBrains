@@ -134,14 +134,14 @@ footer {
     border: 4px double #fdf6e3;
 }
 
+.detailed-description table {
+    margin-bottom: 18px;
+}
+
 .detailed-description table caption {
     text-align: left;
     font-weight: bold;
     margin-bottom: 18px;
-}
-
-.detailed-description table:nth-child(3) caption, .detailed-description table:nth-child(4) caption {
-    margin-top: 18px;
 }
 
 .detailed-description table tr td:first-child {
@@ -180,7 +180,7 @@ form div:first-child input {
     width: 196px;
 }
 
-form div:first-child input:last-child:focus {
+form input:focus, form textarea:focus {
     background-color: #6c71c4;
     color: #fefefe;
 }
