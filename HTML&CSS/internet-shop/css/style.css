@@ -49,14 +49,14 @@ dl dt {
     border-bottom: 1px dashed;
 }
 
-/*.menu a:hover {
+.menu a:hover {
     border-bottom: 0.07em solid;
     font-weight: bold;
 }
 
 .menu a:active {
     color: #707070;
-}*/
+}
 
 footer {
     border-top: solid;
@@ -72,6 +72,7 @@ footer {
 
 .logo {
     font-size: 40px;
+    margin-left: 40px;
 }
 
 .name-shop {
@@ -91,6 +92,15 @@ footer {
     font-size: 22px;
 }
 
+/*CATALOG PAGE*/
+.catalog h1 {
+    margin-left: 40px;
+}
+
+.catalog > div {
+    margin: 30px 40px;
+}
+
 /*PRODUCT PAGE*/
 .product-description h2, .product-characteristics h3, .detailed-description h3 {
     color: black;
@@ -106,20 +116,37 @@ footer {
     line-height: 16px;
 }
 
+.product-description p::first-letter {
+    font-family: "Open Sans Regular", sans-serif;
+    font-size: 24px;
+    color: #6c71c4;
+}
+
+.product-description a {
+    display: block;
+}
+
 .product-description img {
     border: 4px double #6c71c4;
 }
 
-.detailed-description h4 {
+.product-description img:hover {
+    border: 4px double #fdf6e3;
+}
+
+.detailed-description table caption {
+    text-align: left;
     font-weight: bold;
+    margin-bottom: 18px;
 }
 
-.detailed-description dl:first-of-type dt {
-    width: 120px;
+.detailed-description table:nth-child(3) caption, .detailed-description table:nth-child(4) caption {
+    margin-top: 18px;
 }
 
-.detailed-description dl:nth-of-type(2) dt, .detailed-description dl:last-of-type dt {
-    width: 250px;
+.detailed-description table tr td:first-child {
+    font-weight: bold;
+    padding-right: 20px;
 }
 
 .product-characteristics dl dt {
@@ -127,6 +154,10 @@ footer {
 }
 
 /*CONTACT PAGE*/
+.contacts {
+    margin-left: 40px;
+}
+
 .contacts h2 {
     font-size: 1.2em;
 }
@@ -149,15 +180,18 @@ form div:first-child input {
     width: 196px;
 }
 
+form div:first-child input:last-child:focus {
+    background-color: #6c71c4;
+    color: #fefefe;
+}
+
 /*theme*/
 form div:nth-child(2) input {
     width: 400px;
 }
 
-textarea {
-    width: 398px;
-    height: 130px;
-    resize: none;
+input, textarea {
+    text-transform: capitalize;
 }
 
 input[type="submit"] {
@@ -170,10 +204,24 @@ input[type="submit"] {
     font-size: 15px;
 }
 
+textarea {
+    width: 398px;
+    height: 130px;
+    resize: none;
+}
+
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: #fdf6e3;
 }
 
+.address {
+    margin-top: 30px;
+}
+
 .address dl dt {
     width: 100px;
+}
+
+.map {
+    margin: 20px 0;
 }
