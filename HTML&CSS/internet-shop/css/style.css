@@ -70,7 +70,7 @@ footer {
 }
 
 /*MAIN PAGE*/
-.logo, .quote p:last-child {
+.logo a, .quote p:last-child {
     font-family: "Dancing Script", cursive;
 }
 
