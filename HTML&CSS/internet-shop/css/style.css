@@ -16,9 +16,7 @@
 
 /*COMMON STYLES*/
 header {
-    border-bottom: solid;
-    border-color: #6c71c4;
-    border-width: thin;
+    border-bottom:  1px solid #6c71c4;
 }
 
 body {
@@ -37,6 +35,12 @@ a {
 dl dt {
     float: left;
     font-weight: bold;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .menu {
@@ -66,7 +70,7 @@ footer {
 }
 
 /*MAIN PAGE*/
-.logo, .quote p:nth-child(2) {
+.logo, .quote p:last-child {
     font-family: "Dancing Script", cursive;
 }
 
@@ -102,6 +106,10 @@ footer {
 }
 
 /*PRODUCT PAGE*/
+.product-characteristics dl dt {
+    width: 190px;
+}
+
 .product-description h2, .product-characteristics h3, .detailed-description h3 {
     color: black;
     font-size: 18px;
@@ -131,7 +139,7 @@ footer {
 }
 
 .product-description img:hover {
-    border: 4px double #fdf6e3;
+    border-color: transparent;
 }
 
 .detailed-description table {
@@ -147,10 +155,6 @@ footer {
 .detailed-description table tr td:first-child {
     font-weight: bold;
     padding-right: 20px;
-}
-
-.product-characteristics dl dt {
-    width: 190px;
 }
 
 /*CONTACT PAGE*/
