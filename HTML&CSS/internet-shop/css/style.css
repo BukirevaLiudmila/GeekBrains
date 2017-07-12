@@ -29,6 +29,10 @@ body {
 }
 */
 
+html {
+    background-color: rgb(122, 119, 176);
+}
+
 html, body {
     margin: 0;
     width: 100%;
@@ -83,7 +87,7 @@ dl dt {
 
 footer {
     font-size: 14px;
-    height: 70px;
+    height: 76px;
     border-top: 1px solid #6c71c4;
     background-color: #fdf6e3;
     color: #707070;
