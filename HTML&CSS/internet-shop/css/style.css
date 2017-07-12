@@ -16,61 +16,44 @@
 
 /*COMMON STYLES*/
 header {
-    height: 76px;
-    border-bottom: 1px solid #6c71c4;
-    background-color: #fdf6e3;
-}
-
-.header {
     background: url("../img/bg-lilac-header.png");
-}
-
-.header a {
-    color: #fdf6e3;
-}
-
-/*
-body {
-    background-color: #fdf6e3;
-    font-family: "Open Sans Light", monospace;
-    color: #3d4f53;
-}
-*/
-
-html {
-    background-color: rgb(122, 119, 176);
+    /*border-bottom: 1px solid #6c71c4;*/
 }
 
 html, body {
     margin: 0;
-    width: 100%;
+    /*height: 100%;*/
 }
 
-a {
+.header {
+    width: 1200px;
+    height: 76px;
+    margin: auto;
+}
+
+.header a {
+    color: #fdf6e3;
     text-decoration: none;
     cursor: pointer;
-    color: #6c71c4;
-    font-family: "Open Sans Light", monospace;
 }
 
-a:hover {
-    font-weight: bold;
+.page {
+    min-height: calc(100vh - 80px);
 }
 
-dl dt {
+.logo {
+    font-size: 40px;
+    margin-left: 40px;
+    margin-top: 12px;
     float: left;
-    font-weight: bold;
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+.logo a, .quote p:last-child {
+    font-family: "Dancing Script", cursive;
 }
 
 .menu {
     list-style: none;
-    font-family: "Open Sans Regular", monospace;
     font-size: 18px;
     overflow: hidden;
     margin: 0;
@@ -78,67 +61,97 @@ dl dt {
 
 .menu li {
     float: left;
-    margin: 20px 10px;
+    margin: 25px 10px;
 }
 
 .menu li a {
+    font-family: "Open Sans Light", monospace;
     text-decoration: none;
     cursor: pointer;
     display: block;
     border-bottom: 1px dashed;
 }
 
-.menu a:hover {
-    border-bottom: 0.07em solid;
+
+.menu li a:hover {
     font-weight: bold;
+    border-bottom: 0.07em solid;
 }
 
-.menu a:active {
+.menu li a:active {
     color: #707070;
 }
 
 .container {
-    width: 1200px;
-    margin: 0 auto;
     font-family: "Open Sans Light", monospace;
-    color: #fefefe;
+    background-color: #fdf6e3;
+}
+
+.container .main {
+    width: 1200px;
+    height: 798px;
+    overflow: hidden;
+    margin: auto;
+    color: #6c71c4;
 }
 
 footer {
     font-size: 14px;
-    height: 76px;
-    border-top: 1px solid #6c71c4;
-    background-color: #fdf6e3;
-    color: #707070;
-}
-
-footer p {
-    display: inline-block;
-    margin: 30px 55px 0 987px;
+    background: url("../img/bg-lilac-footer.png");
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer {
-    background: url("../img/bg-lilac-footer.png");
+    margin: auto;
+    height: 76px;
+    width: 1200px;
+}
+
+.footer p {
+    display: inline-block;
+    margin: 30px 55px 0 987px;
+    font-family: "Open Sans Light", monospace;
     color: #fdf6e3;
 }
 
-/*MAIN PAGE*/
-.container .main {
-    height: 795px;
-    overflow: hidden;
-    background: url("../img/bg-lilac.png") no-repeat;
-}
-
-.logo a, .quote p:last-child {
-    font-family: "Dancing Script", cursive;
-}
-
-.logo {
-    font-size: 40px;
-    margin-left: 40px;
+dl dt {
     float: left;
+    font-weight: bold;
 }
 
+input[type="submit"] {
+    border: none;
+    width: 110px;
+    height: 30px;
+    color: #fdf6e3;
+    background: #6c71c4;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    color: #fdf6e3;
+    background: #434883;
+}
+input[type="submit"]:active {
+    cursor: pointer;
+    color: #fdf6e3;
+    background: #434883;
+    font-weight: bold;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*MAIN PAGE*/
 .name-shop {
     font-family: "Open Sans Light", sans-serif;
     font-size: 25px;
@@ -158,30 +171,46 @@ footer p {
 }
 
 /*CATALOG PAGE*/
-.container .catalog {
-    background-color: #fdf6e3;
-    overflow: hidden;
-    height: 795px;;
-}
-
 .catalog h1 {
     margin-left: 40px;
+}
+
+.product-item {
+    margin: 30px 40px;
+    float: left;
+    width: 200px;
+}
+
+.product-item a {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
     color: #6c71c4;
 }
 
-.catalog > div {
-    margin: 30px 40px;
-    display: inline-block;
+.product-item a:hover {
+    font-weight: bold;
+}
+
+.product-item div:first-child{
     width: 200px;
+}
+
+.product-item img {
+    width: 100%;
 }
 
 /*PRODUCT PAGE*/
 .container .product {
     color: #707070;
-    padding: 0 30px;
     background-color: #fdf6e3;
     overflow: hidden;
     height: auto;
+    padding-left: 40px;
+}
+
+.container .product section:last-child {
+    margin: 20px 0;
 }
 
 .product-characteristics dl dt {
@@ -199,11 +228,23 @@ footer p {
     background: #eee8d5;
 }
 
+.product-description h2 {
+    margin: 0;
+}
+
 .product-description p {
     color: #707070;
     font-size: 14px;
     font-style: italic;
-    line-height: 16px;
+}
+
+.product-description div:first-of-type {
+    float: left;
+}
+
+.product-description div:nth-of-type(2) {
+    padding-left: 30px;
+    overflow: hidden;
 }
 
 .product-description p::first-letter {
@@ -242,9 +283,7 @@ footer p {
 /*CONTACT PAGE*/
 .container .contacts {
     color: #707070;
-    padding: 0 30px;
-    background-color: #fdf6e3;
-    overflow: hidden;
+    padding-left: 40px;
 }
 
 .container .contacts h1 {
@@ -264,9 +303,9 @@ footer p {
     opacity: 0.4;
 }
 
-/*.write-to-us {*/
-    /*float: left;*/
-/*}*/
+.feedback-form {
+    float: left;
+}
 
 form div input {
     height: 25px;
@@ -291,16 +330,6 @@ input, textarea {
     text-transform: capitalize;
 }
 
-input[type="submit"] {
-    border: none;
-    width: 110px;
-    height: 30px;
-    color: #fdf6e3;
-    background: #6c71c4;
-    border-radius: 5px;
-    font-size: 15px;
-}
-
 textarea {
     width: 398px;
     height: 130px;
@@ -312,7 +341,8 @@ textarea {
 }
 
 .address {
-    margin-top: 30px;
+    overflow: hidden;
+    padding-left: 40px;
 }
 
 .address dl dt {
