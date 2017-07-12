@@ -16,13 +16,22 @@
 
 /*COMMON STYLES*/
 header {
-    border-bottom:  1px solid #6c71c4;
+    height: 76px;
+    border-bottom: 1px solid #6c71c4;
+    background-color: #fdf6e3;
 }
 
+/*
 body {
     background-color: #fdf6e3;
     font-family: "Open Sans Light", monospace;
     color: #3d4f53;
+}
+*/
+
+html, body {
+    margin: 0;
+    width: 100%;
 }
 
 a {
@@ -47,9 +56,19 @@ dl dt {
     list-style: none;
     font-family: "Open Sans Regular", monospace;
     font-size: 18px;
+    overflow: hidden;
+    margin: 0;
 }
 
-.menu a {
+.menu li {
+    float: left;
+    margin: 20px 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
     border-bottom: 1px dashed;
 }
 
@@ -63,13 +82,36 @@ dl dt {
 }
 
 footer {
-    border-top: solid;
-    border-color: #6c71c4;
-    border-width: thin;
     font-size: 14px;
+    height: 70px;
+    border-top: 1px solid #6c71c4;
+    background-color: #fdf6e3;
+    color: #707070;
+}
+
+footer p {
+    display: inline-block;
+    margin: 30px 55px 0 987px;
 }
 
 /*MAIN PAGE*/
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    font-family: "Open Sans Light", monospace;
+    color: #fefefe;
+}
+
+.container section {
+    height: 795px;
+    overflow: hidden;
+    background: url("../img/bg-lilac.png") no-repeat;
+}
+
+/*.container header, .container footer {
+    border: 0;
+}*/
+
 .logo a, .quote p:last-child {
     font-family: "Dancing Script", cursive;
 }
@@ -77,19 +119,21 @@ footer {
 .logo {
     font-size: 40px;
     margin-left: 40px;
+    float: left;
 }
 
 .name-shop {
-    font-family: "Open Sans Regular", sans-serif;
+    font-family: "Open Sans Light", sans-serif;
     font-size: 25px;
     text-align: center;
 }
 
 .quote {
-    font-family: "Open Sans Regular", sans-serif;
+    font-family: "Open Sans Light", sans-serif;
     font-size: 20px;
     text-align: right;
-    width: 35em;
+    margin: 210px 55px 0 500px;
+    display: inline-block;
 }
 
 .quote p:nth-child(2) {
