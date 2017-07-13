@@ -17,12 +17,11 @@
 /*COMMON STYLES*/
 header {
     background: url("../img/bg-lilac-header.png");
-    /*border-bottom: 1px solid #6c71c4;*/
+    background-size: cover;
 }
 
 html, body {
     margin: 0;
-    /*height: 100%;*/
 }
 
 .header {
@@ -35,10 +34,6 @@ html, body {
     color: #fdf6e3;
     text-decoration: none;
     cursor: pointer;
-}
-
-.page {
-    min-height: calc(100vh - 80px);
 }
 
 .logo {
@@ -98,9 +93,7 @@ html, body {
 footer {
     font-size: 14px;
     background: url("../img/bg-lilac-footer.png");
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    background-size: cover;
 }
 
 .footer {
