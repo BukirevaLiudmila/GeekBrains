@@ -65,3 +65,4 @@ $RECYCLE.BIN/
 *.lnk
 
 .idea/workspace.xml
+.idea/
