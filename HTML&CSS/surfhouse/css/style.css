@@ -1,38 +1,31 @@
-
 body {
-    padding: 0;
     margin: 0;
     width: 100%;
 }
 
-.global-part{
+.global-part {
     float: left;
     width: 100%;
 }
 
-.global-part.header{
-    background-color:  #abeafa;
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*HEADER*/
+.global-part.header {
+    background-image: url("../img/wave.jpg");
+    background-size: cover;
     height: 700px;
 }
 
-.global-part.main{
-    background-color:  #cccccc;
-    min-height: 700px;
+.container.top-header {
+    height: 140px;
 }
 
-.container{
-    width: 1170px;
-    margin: 0 auto;
-    position: relative;
-
-    border: thin solid;
-}
-
-.container.top{
-    margin-top: -20px;
-}
-
-.logo{
+.logo {
     position: absolute;
     display: block;
     background-image: url("../img/logo.png");
@@ -40,4 +33,100 @@ body {
     height: 111px;
     left: 69px;
     top: 23px;
+}
+
+.social-network {
+    position: absolute;
+    top: 50px;
+    left: 970px;
+}
+
+.social-network a.fa {
+    display: block;
+    text-decoration: none;
+    float: left;
+    margin: 0 6px;
+    color: #fcfcfc;
+}
+
+.container.bottom-header {
+    height: 495px;
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+}
+
+.welcome {
+    background-color:  #fff51f;
+    width: 270px;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color:  #333333;
+    font-weight: 700;
+}
+
+.welcome h2 {
+    font-size: 30px;
+    line-height: 30px;
+    margin: 76px 26px 0 26px;
+}
+
+.welcome p {
+    font-style: italic;
+    text-align: justify;
+    width: 218px;
+    height: 60px;
+    font-size: 18px;
+    line-height: 14px;
+    margin: 20px 24px;
+}
+
+.text-block {
+    width: 315px;
+    height: 169px;
+    color:  #fff51f;
+    margin: 100px 750px;
+}
+
+.text-block h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 34px;
+    margin: 0;
+}
+
+.text-block p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 6px 0 60px 0;
+}
+
+.text-block input[type="submit"] {
+    width: 124px;
+    height: 49px;
+    background-color: #fff51f;
+    border: 0;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    color: #000001;
+}
+
+.global-part.main {
+    background-color: #cccccc;
+    min-height: 900px;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    border: thin solid;
+}
+
+.container.top {
+    margin-top: -20px;
 }
