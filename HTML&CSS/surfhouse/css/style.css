@@ -1,0 +1,43 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.global-part{
+    float: left;
+    width: 100%;
+}
+
+.global-part.header{
+    background-color:  #abeafa;
+    height: 700px;
+}
+
+.global-part.main{
+    background-color:  #cccccc;
+    min-height: 700px;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+    position: relative;
+
+    border: thin solid;
+}
+
+.container.top{
+    margin-top: -20px;
+}
+
+.logo{
+    position: absolute;
+    display: block;
+    background-image: url("../img/logo.png");
+    width: 125px;
+    height: 111px;
+    left: 69px;
+    top: 23px;
+}
