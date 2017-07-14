@@ -27,7 +27,7 @@ html, body {
 .header {
     width: 1200px;
     height: 76px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .header a {
@@ -86,7 +86,7 @@ html, body {
     width: 1200px;
     height: 798px;
     overflow: hidden;
-    margin: auto;
+    margin: 0 auto;
     color: #6c71c4;
 }
 
@@ -97,7 +97,7 @@ footer {
 }
 
 .footer {
-    margin: auto;
+    margin: 0 auto;
     height: 76px;
     width: 1200px;
 }
