@@ -1,3 +1,4 @@
+/*COMMON STYLES*/
 body {
     margin: 0;
     width: 100%;
@@ -6,6 +7,13 @@ body {
 .global-part {
     float: left;
     width: 100%;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    /*border: thin solid;*/
 }
 
 .clearfix::after {
@@ -83,8 +91,9 @@ body {
 }
 
 .text-block {
+    display: inline-block;
     width: 315px;
-    height: 169px;
+    height: 279px;
     color:  #fff51f;
     margin: 100px 750px;
 }
@@ -115,16 +124,10 @@ body {
     color: #000001;
 }
 
+/**/
 .global-part.main {
     background-color: #cccccc;
     min-height: 900px;
-}
-
-.container {
-    width: 1170px;
-    margin: 0 auto;
-    position: relative;
-    border: thin solid;
 }
 
 .container.top {
