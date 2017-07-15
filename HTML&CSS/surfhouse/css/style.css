@@ -13,7 +13,7 @@ body {
     width: 1170px;
     margin: 0 auto;
     position: relative;
-    /*border: thin solid;*/
+    border: thin solid;
 }
 
 .clearfix::after {
@@ -124,10 +124,56 @@ body {
     color: #000001;
 }
 
-/**/
+/*MAIN*/
 .global-part.main {
-    background-color: #cccccc;
+    background-color: #f7f7f8;
     min-height: 900px;
+}
+
+.left-block, .right-block {
+    background-color: #f7f7f8;
+}
+
+.left-block {
+    float: left;
+}
+
+ul.menu {
+    width: 270px;
+    height: 550px;
+    background-color: #26d2fc;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    color:  #000000;
+    font-size: 14px;
+}
+
+ul.menu li:first-child {
+    padding: 30px 40px;
+    background-color: #333333;
+    font-weight: 700;
+    color: #fcfcfc;
+}
+
+ul.menu li a {
+    display: block;
+    height: 38px;
+    text-decoration: none;
+    line-height: 36px;
+    color: #000000;
+    font-weight: 900;
+    padding: 5px 0 0 40px;
+}
+
+ul.menu li a:hover {
+    background-color: #333333;
+    color: #fcfcfc;
+}
+
+.right-block {
+    overflow: hidden;
 }
 
 .container.top {
