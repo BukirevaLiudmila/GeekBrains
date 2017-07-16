@@ -30,7 +30,7 @@ header {
 
 .logo {
     position: absolute;
-    background-image: url("../img/logo.png");
+    background-image: url("../img/logo-surfhouse.png");
     width: 125px;
     height: 111px;
     left: 69px;
@@ -120,7 +120,6 @@ header {
 /*MAIN*/
 .main {
     background-color: #f7f7f8;
-    min-height: 900px;
 }
 
 .top {
@@ -268,4 +267,25 @@ ul.menu li a:hover {
 
 .old-price.hot {
     color: #e24602;
+}
+
+.brands {
+    background-color: #fdfdfd;
+    width: 1170px;
+    height: 160px;
+    border: thin solid;
+}
+
+.brand-item {
+    width: 120px;
+    float: left;
+    margin: 48px 13px;
+}
+
+.brand-item a {
+    display: block;
+}
+
+.brand-item img {
+    width: 100%;
 }
