@@ -205,14 +205,8 @@ ul.menu li a:hover {
     margin: 22px 24px;
 }
 
-.new-products-block {
-    overflow: hidden;
-    width: 870px;
-    /*position: absolute;*/
-    /*right: 0;*/
-    border: thin solid;
-    background-color: #f8f8f8;
-    font-family: 'Roboto', sans-serif;
+.products-block:nth-child(2) h2, .products-block:last-child h2 {
+    margin-top: 45px;
 }
 
 .product-card {
@@ -242,10 +236,16 @@ ul.menu li a:hover {
     font-style: italic;
     padding-top: 20px;
     padding-left: 15px;
+    text-transform: uppercase;
+}
+
+.first-line .product-description {
+    text-transform: none;
 }
 
 .product-description .name {
     width: 135px;
+    height: 36px;
     float: left;
     font-size: 14px;
     line-height: 18px;
@@ -261,7 +261,11 @@ ul.menu li a:hover {
 }
 
 .price-block .old-price {
-    color: #e24602;
+    color: rgba(254, 0, 0, 0.6);
     font-size: 14px;
     text-decoration: line-through;
+}
+
+.old-price.hot {
+    color: #e24602;
 }
