@@ -54,7 +54,6 @@ header {
 .container.bottom-header {
     height: 495px;
     font-family: 'Raleway', sans-serif;
-    text-align: left;
 }
 
 .welcome {
@@ -152,7 +151,6 @@ header {
     font-weight: 900;
     font-style: italic;
     line-height: 36px;
-    text-align: left;
 }
 
 ul.menu {
@@ -171,7 +169,7 @@ ul.menu li:first-child {
     padding: 24px 40px;
     background-color: #333333;
     font-weight: 700;
-    color: #fcfcfc;
+    color: #fdfdfd;
 }
 
 ul.menu li a {
@@ -190,9 +188,9 @@ ul.menu li a:hover {
 }
 
 .right-block {
+    position: absolute;
     overflow: hidden;
     width: 870px;
-    position: absolute;
     right: 0;
     border: thin solid;
     background-color: #f8f8f8;
@@ -204,8 +202,66 @@ ul.menu li a:hover {
     font-size: 22px;
     font-weight: 900;
     font-style: italic;
-    text-align: left;
     margin: 22px 24px;
 }
 
+.new-products-block {
+    overflow: hidden;
+    width: 870px;
+    /*position: absolute;*/
+    /*right: 0;*/
+    border: thin solid;
+    background-color: #f8f8f8;
+    font-family: 'Roboto', sans-serif;
+}
 
+.product-card {
+    background-color: #fdfdfd;
+    border: thin solid;
+    width: 270px;
+    height: 320px;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.product-card:last-child {
+    margin-right: 0;
+}
+
+.product-img {
+    background-color: #eaeaea;
+    height: 235px;
+}
+
+.product-description {
+    color: #333333;
+    font-weight: 900;
+    font-style: italic;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.product-description .name {
+    width: 135px;
+    float: left;
+    font-size: 14px;
+    line-height: 18px;
+    overflow: hidden;
+}
+
+.price-block {
+    text-align: right;
+}
+
+.price-block .new-price {
+    font-size: 18px;
+}
+
+.price-block .old-price {
+    color: #e24602;
+    font-size: 14px;
+    text-decoration: line-through;
+}
