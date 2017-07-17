@@ -43,7 +43,7 @@ header {
     left: 970px;
 }
 
-.social-network a.fa {
+.social-network a {
     display: block;
     text-decoration: none;
     float: left;
@@ -504,5 +504,21 @@ footer > div:last-child {
 
 .footer-bottom {
     height: 47px;
-    background-color:  #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom div:first-child {
+    font-family: 'Roboto', sans-serif;
+    color:  #dad9d9;
+    font-size: 13px;
+}
+
+.footer-social-network a {
+    display: block;
+    text-decoration: none;
+    float: left;
+    margin: 0 8px;
+    color: #fcfcfc;
 }
