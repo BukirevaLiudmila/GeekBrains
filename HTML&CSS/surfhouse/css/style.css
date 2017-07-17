@@ -24,7 +24,7 @@ header {
     height: 700px;
 }
 
-.container.top-header {
+.container.header-top {
     height: 140px;
 }
 
@@ -51,7 +51,7 @@ header {
     color: #fcfcfc;
 }
 
-.container.bottom-header {
+.container.header-bottom {
     height: 495px;
     font-family: 'Raleway', sans-serif;
 }
@@ -294,7 +294,7 @@ ul.menu li a:hover {
 
 .post-brands {
     background-color: #eaeaea;
-    height: 350px;
+    height: 500px;
 }
 
 .post-brands > div:first-child {
@@ -306,11 +306,11 @@ ul.menu li a:hover {
     text-align: center;
 }
 
-.post-brands div:first-child span:nth-child(2) {
+.post-brands > div:first-child span:nth-child(2) {
     font-size: 22px;
 }
 
-.post-brands div:first-child span:last-child {
+.post-brands > div:first-child span:last-child {
     font-size: 18px;
 }
 
@@ -321,7 +321,35 @@ ul.menu li a:hover {
     align-items: center;
 }
 
-.post-brands div:nth-child(2) div {
+.post-brands > div:nth-child(2) div {
     height: 185px;
     width: 185px;
+}
+
+.post-brands > div:last-child {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-brands > div:last-child a {
+    color: #fdfdfd;
+    text-decoration: none;
+    width: 390px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-brands > div:last-child a:first-child {
+    background-color: #3b5997;
+}
+
+.post-brands > div:last-child a:nth-child(2) {
+    background-color: #3fccfd;
+}
+
+.post-brands > div:last-child a:last-child {
+    background-color: #cb2027;
 }
