@@ -1,15 +1,12 @@
 /*COMMON STYLES*/
 body {
     margin: 0;
-    min-width: 1170px;
 }
 
 .container {
     width: 1170px;
     margin: 0 auto;
     position: relative;
-    min-width: 900px;
-    /*border: thin solid;*/
 }
 
 .clearfix::after {
@@ -24,6 +21,7 @@ header {
     background-attachment: fixed;
     background-size: cover;
     height: 700px;
+    min-width: 1170px;
 }
 
 .header-top {
@@ -132,7 +130,6 @@ header {
 .left-block {
     float: left;
     background-color: #f7f7f8;
-    /*border: thin solid;*/
 }
 
 .left-block div:last-child {
@@ -281,7 +278,6 @@ ul.menu li a:hover {
 
 .product-card {
     background-color: #fdfdfd;
-    /*border: thin solid;*/
     width: 270px;
     height: 320px;
     padding: 10px;
@@ -439,10 +435,10 @@ footer > div:last-child {
 }
 
 .footer-top {
+    background-color: #373737;
     display: flex;
     justify-content: space-around;
     padding: 52px 0;
-    /*align-items: flex-start;*/
 }
 
 .footer-top h3 {
@@ -465,6 +461,35 @@ footer > div:last-child {
 .footer-top > div:first-child {
     width: 130px;
 }
+
+.footer-top > div:last-child p {
+    font-size: 12px;
+    width: 232px;
+}
+
+.footer-top > div:last-child {
+    width: 232px;
+}
+
+.footer-top > div:last-child dl {
+    font-family: 'Roboto', sans-serif;
+    color: #fdfdfd;
+    font-size: 14px;
+}
+
+.footer-top > div:last-child dl dt, .footer-top div:last-child dl dd {
+    line-height: 24px;
+}
+
+.footer-top > div:last-child dl dt {
+    float: left;
+    width: 63px;
+}
+
+.footer-top > div:last-child dl dd:last-child {
+    color: #faef03;
+}
+
 
 .newsletter {
     width: 260px;
@@ -542,35 +567,8 @@ footer > div:last-child {
     line-height: 21px;
 }
 
-.footer-top > div:last-child p {
-    font-size: 12px;
-    width: 232px;
-}
-
-.footer-top > div:last-child {
-    width: 232px;
-}
-
-.footer-top > div:last-child dl {
-    font-family: 'Roboto', sans-serif;
-    color: #fdfdfd;
-    font-size: 14px;
-}
-
-.footer-top > div:last-child dl dt, .footer-top div:last-child dl dd {
-    line-height: 24px;
-}
-
-.footer-top > div:last-child dl dt {
-    float: left;
-    width: 63px;
-}
-
-.footer-top > div:last-child dl dd:last-child {
-    color: #faef03;
-}
-
 .footer-bottom {
+    background-color: #333333;
     height: 47px;
     display: flex;
     justify-content: space-between;
