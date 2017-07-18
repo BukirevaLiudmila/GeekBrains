@@ -20,6 +20,7 @@ body {
 /*HEADER*/
 header {
     background-image: url("../img/wave.jpg");
+    background-attachment: fixed;
     background-size: cover;
     height: 700px;
 }
@@ -210,9 +211,71 @@ ul.menu li a:hover {
     margin-top: 56px;
 }
 
-/*отменяеи преобразование текста для первых трёх элементав блока NEW PRODUCTS*/
+/*отменяем преобразование текста для первых трёх элементав блока NEW PRODUCTS*/
 .new-products .product-card:nth-child(-n+3) .product-description {
     text-transform: none;
+}
+
+.new-label, .hot-label {
+    position: relative;
+}
+
+.new-label::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '';
+    display: block;
+    z-index: 1;
+    border: 22px solid transparent;
+    border-top: 22px solid #e24602;
+    border-right: 22px solid #e24602;
+}
+
+.new-label::after {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    content: 'NEW';
+    display: block;
+    color: #fdfdfd;
+    font-size: 9px;
+    font-family: 'Roboto', sans-serif;
+    /*text-align: center;*/
+    padding-top: 9px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.hot-label {
+    position: relative;
+}
+
+.hot-label::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '';
+    display: block;
+    z-index: 1;
+    border: 22px solid transparent;
+    border-top: 22px solid #faef03;;
+    border-right: 22px solid #faef03;;
+}
+
+.hot-label::after {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    content: 'HOT';
+    display: block;
+    color: #010101;
+    font-size: 9px;
+    font-family: 'Roboto', sans-serif;
+    /*text-align: center;*/
+    padding-top: 9px;
+    box-sizing: border-box;
+    z-index: 1;
 }
 
 .product-card {
@@ -234,6 +297,10 @@ ul.menu li a:hover {
 .product-img {
     background-color: #eaeaea;
     height: 235px;
+}
+
+.product-img img {
+    width: 100%;
 }
 
 .product-description {
