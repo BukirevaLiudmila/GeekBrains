@@ -1,13 +1,14 @@
 /*COMMON STYLES*/
 body {
     margin: 0;
-    width: 100%;
+    min-width: 1170px;
 }
 
 .container {
     width: 1170px;
     margin: 0 auto;
     position: relative;
+    min-width: 900px;
     /*border: thin solid;*/
 }
 
@@ -89,7 +90,7 @@ header {
     width: 315px;
     height: 279px;
     color: #fff51f;
-    margin: 100px 750px;
+    margin: 100px 0 100px 750px ;
 }
 
 .text-block h2 {
@@ -440,7 +441,7 @@ footer > div:last-child {
 .footer-top {
     display: flex;
     justify-content: space-around;
-    padding: 52px;
+    padding: 52px 0;
     /*align-items: flex-start;*/
 }
 
