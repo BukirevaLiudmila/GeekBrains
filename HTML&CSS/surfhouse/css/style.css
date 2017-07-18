@@ -16,7 +16,7 @@ body {
 }
 
 /*HEADER*/
-header {
+.header {
     background-image: url("../img/wave.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -51,7 +51,7 @@ header {
     color: #fcfcfc;
 }
 
-.container.header-bottom {
+.header-bottom {
     height: 495px;
     font-family: 'Raleway', sans-serif;
 }
@@ -132,14 +132,14 @@ header {
     background-color: #f7f7f8;
 }
 
-.left-block div:last-child {
+.now-is-open {
     background-color: #e0e0e0;
     width: 270px;
     height: 300px;
     margin-top: 32px;
 }
 
-.left-block div:last-child span {
+.now-is-open span {
     display: block;
     width: 109px;
     height: 98px;
@@ -276,6 +276,11 @@ ul.menu li a:hover {
     z-index: 1;
 }
 
+a.product-card {
+    display: block;
+    text-decoration: none;
+}
+
 .product-card {
     background-color: #fdfdfd;
     width: 270px;
@@ -285,6 +290,10 @@ ul.menu li a:hover {
     float: left;
     margin-right: 30px;
     margin-bottom: 30px;
+}
+
+.product-card:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .product-card:nth-child(3n) {
@@ -422,15 +431,15 @@ ul.menu li a:hover {
 }
 
 /*FOOTER*/
-footer {
+.footer {
     height: 348px;
 }
 
-footer > div:first-child {
+.footer > div:first-child {
     background-color: #373737;
 }
 
-footer > div:last-child {
+.footer > div:last-child {
     background-color: #333333;
 }
 
@@ -490,6 +499,9 @@ footer > div:last-child {
     color: #faef03;
 }
 
+.footer-top a:hover {
+    color: #faef03;
+}
 
 .newsletter {
     width: 260px;
