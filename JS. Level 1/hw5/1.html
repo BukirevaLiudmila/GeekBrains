@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Chess Board</title>
+    <style>
+        /*для рядов*/
+        #board > div {
+            clear:both;
+            display: table;
+        }
+
+        /*для ячеек*/
+        .cell {
+            float: left;
+            height: 40px;
+            width: 40px;
+            text-align: center;
+        }
+
+        .cell.dark {
+            background-color: #8B4513;
+        }
+
+        .cell.white {
+            background-color: #FFF8DC;
+        }
+
+    </style>
+
+</head>
+<body>
+
+</body>
+
+<script>
+    function createChessBoard() {
+        var board = document.createElement('div');
+        board.id = 'board';
+        document.body.appendChild(board);
+        for (var j = 9; j >= 1 ; j--) {
+                var line = document.createElement('div');
+                line.id = 'line' + j;
+                document.getElementById('board').appendChild(line);
+                var num = document.createElement('div');
+                num.classList.add('cell');
+            if (j !== 1) {
+                num.innerText = j - 1;
+            } else {
+                num.innerText = '';
+            }
+            document.getElementById('line' + j).appendChild(num);
+            for (var i = 1; i <= 8 ; i++) {
+                if (j != 1) {
+                    var cell = document.createElement('div');
+                    cell.classList.add('cell');
+                    if (j % 2 == 0) {
+                        if (i % 2 == 0) {
+                            cell.classList.add('dark');
+                        } else {
+                            cell.classList.add('white');
+                        }
+                    } else {
+                        if (i % 2 == 0) {
+                            cell.classList.add('white');
+                        } else {
+                            cell.classList.add('dark');
+                        }
+                    }
+                    document.getElementById('line' + j).appendChild(cell);
+                } else {
+                    var str = 'ABCDEFGH';
+                    var letter = document.createElement('div');
+                    letter.classList.add('cell');
+                    letter.innerText = str[i - 1];
+                    document.getElementById('line' + j).appendChild(letter);
+                }
+            }
+        }
+    }
+    createChessBoard();
+</script>
+</html>
