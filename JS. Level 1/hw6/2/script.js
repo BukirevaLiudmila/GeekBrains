@@ -39,5 +39,5 @@ document.addEventListener("DOMContentLoaded", function () {
         var sumDiv = document.querySelector('.sum');
         sumDiv.innerText = 'Сумма: ' + sum;
     }
-    
+
 })
