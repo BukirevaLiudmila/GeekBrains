@@ -1,16 +1,15 @@
 let url = 'https://jsonplaceholder.typicode.com/users/';
 
 let promiseArray = [];
-let promiseResults = [];
 
+//AJAX
 for (let i = 1; i <= 10; i++) {
 	promiseArray.push(new Promise((resolve, reject) => {
 		let xhr = new XMLHttpRequest();
 		xhr.open('GET', url + i, true);
 		xhr.onreadystatechange = () => {
 			if (xhr.status == 200) {
-				promiseResults.push(JSON.parse(xhr.response));
-				resolve(promiseResults);
+				resolve(JSON.parse(xhr.response));
 			} else {
 				let error = new Error(xhr.statusText);
 				error.code = xhr.status;
@@ -21,6 +20,11 @@ for (let i = 1; i <= 10; i++) {
 	}));
 }
 
+//fetch (альтернатива)
+/*for (let i = 1; i <= 10; i++) {
+	promiseArray.push(fetch(url + 1).then((response) => response.json()));
+}*/
+
 Promise.all(promiseArray).then(
 	(result) => {
 		console.log(result);
@@ -28,3 +32,4 @@ Promise.all(promiseArray).then(
 	(error) => {
 		console.log(error);
 	});
+

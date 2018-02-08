@@ -6,12 +6,20 @@ function* questionnaire() {
 	yield age;
 
 	let hobby = prompt('Чем ты увлекаешься?', 'Хобби');
-	yield {name, age, hobby};
+	return {name, age, hobby};
+}
+
+function execute(generator, yieldValue) {
+	let next = generator.next(yieldValue);
+
+	if (!next.done) {
+		execute(generator, next.value);
+	} else {
+		console.log(next.value)
+	}
+
 }
 
 let myQuestionnaire = questionnaire();
+execute(myQuestionnaire);
 
-let name = myQuestionnaire.next();
-let age = myQuestionnaire.next();
-let hobby = myQuestionnaire.next();
-console.log(hobby);
