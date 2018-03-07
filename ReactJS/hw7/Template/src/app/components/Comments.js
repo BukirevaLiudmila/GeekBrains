@@ -1,49 +1,23 @@
 import React from 'react';
 import CommentList from './CommentList';
-import CommentStore from '../stores/commentStore';
-import { addComment, fetchComments } from '../actions/commentsActions';
+
+import { connect } from 'react-redux';
+import { fetchComments} from "../actions/commentsActions";
+
+@connect((store) => {
+    return {
+        comments: store.comments.comments,
+        is_fetching: store.comments.is_fetching
+    }
+})
 
 export default class Comments extends React.Component
 {
-    constructor()
+    constructor(props)
     {
-        super(...arguments);
-
-        this.state = {
-            comments: []
-        };
-
-        this.newComment = this.newComment.bind(this);
-        this.onCommentChange = this.onCommentChange.bind(this);
-    }
-
-    newComment()
-    {
-        let body = 'Новый комментарий';
-        let userId = 1;
-        let title = 'Комментарий 1';
-
-        addComment({title, userId, body});
-    }
-
-    onCommentChange(comments)
-    {
-        this.setState({
-            comments: comments
-        });
-    }
-
-    componentWillMount(){
-        CommentStore.on('change', this.onCommentChange);
-    }
-
-    componentDidMount()
-    {
-        fetchComments();
-    }
-
-    componentWillUnmount(){
-        CommentStore.removeListener('change', this.onCommentChange);
+        super(props);
+        let toDispatch = fetchComments();
+        this.props.dispatch(toDispatch)
     }
 
     render()
@@ -55,7 +29,7 @@ export default class Comments extends React.Component
                 className="btn btn-primary btn-block"
                 onClick={this.newComment}
                 >Добавить новый комментарий</button>
-                <CommentList comments={this.state.comments} />
+                <CommentList comments={this.props.comments} />
             </div>
         );
     }

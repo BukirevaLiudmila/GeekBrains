@@ -9,17 +9,22 @@ import Users from './app/pages/Users';
 import User from './app/pages/User';
 import Comments from './app/components/Comments';
 
+import {Provider} from 'react-redux';
+import store from './app/stores/store';
+
 const app = document.getElementById('app');
 
 ReactDOM.render(
-    <Router history={browserHistory}>
-        <Route path="/" component={Layout}>
-            <IndexRoute component={Main}/>
-            <Route path="users" component={Users}>
-                <Route path=":userId" component={User} />
+    <Provider store={store}>
+        <Router history={browserHistory}>
+            <Route path="/" component={Layout}>
+                <IndexRoute component={Main}/>
+                <Route path="users" component={Users}>
+                    <Route path=":userId" component={User}/>
+                </Route>
+                <Route path="comments" component={Comments}/>
+                <Route path="*" component={PageNotFound}/>
             </Route>
-            <Route path="comments" component={Comments} />
-            <Route path="*" component={PageNotFound}/>
-        </Route>
-    </Router>,
+        </Router>
+    </Provider>,
     app);

@@ -14,8 +14,7 @@ export default class UsersList extends React.Component
 
         //Получение пользователей
         axios
-            //.get('https://jsonplaceholder.typicode.com/users')
-            .get('http://localhost:8082/api/users')
+            .get('https://jsonplaceholder.typicode.com/users')
             .then((response) => {
                 let { data } = response;
                 this.setState({
